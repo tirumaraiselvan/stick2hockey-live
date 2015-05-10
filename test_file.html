@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script>
+        function showProps(e) {
+
+            var selectedFile = document.getElementById(e.id).length;
+            document.getElementById('blah').innerHTML = selectedFile;
+        }
+    </script>
+</head>
+<body>
+
+<form>
+<input type="file" id="abc" onchange="showProps(this);" multiple/>
+<input type="file" id="abc" onchange="showProps(this);" multiple/>
+
+</form>
+
+<p id="blah"></p>
+</body>
+</html>
